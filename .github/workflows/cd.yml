@@ -20,3 +20,4 @@ jobs:
 
       - name: Build application
         run: ./scripts/buildprod.sh
+#
