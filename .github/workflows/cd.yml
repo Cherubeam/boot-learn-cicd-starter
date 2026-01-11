@@ -32,10 +32,10 @@ jobs:
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
-      - name: 'Set up Cloud SDK'
+      - name: Set up Cloud SDK
         uses: 'google-github-actions/setup-gcloud@v3'
 
-      - name: 'Use gcloud CLI'
+      - name: Use gcloud CLI
         run: 'gcloud info'
 
       - name: Build Docker image and push to Google Artifact Registry
